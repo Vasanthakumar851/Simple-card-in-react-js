@@ -1,25 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import UserCard from "./UserCard";
 
-function App() {
+const App = () => {
+  const UserData = [
+    {
+      name: "vasanth",
+      address: "Pondy",
+      description: "Front-End Developer",
+      skills: ["HTML", "CSS", "JAVASCRIPT"],
+      online: true,
+      images: "images/1.png",
+    },
+    {
+      name: "Vijay",
+      address: "Chennai",
+      description: "Full Stack Developer",
+      skills: ["HTML", "JAVASCRIPT", "PHP"],
+      online: true,
+      images: "images/2.jpg",
+    },
+    {
+      name: "BalaMani",
+      address: "Pondy",
+      description: "SQL Developer",
+      skills: ["SQL", "MYSQL"],
+      online: true,
+      images: "images/3.jpg",
+    },
+    {
+      name: "Balamurugan",
+      address: "Pondy",
+      description: "Full Stack Developer",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "PHP", "SQL", "LARAVAL"],
+      online: true,
+      images: "images/1.png",
+    },
+    {
+      name: "Janagan",
+      address: "Cuddalore",
+      description: "Full Stack Developer",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "PHP", "SQL", "LARAVAL"],
+      online: true,
+      images: "images/3.jpg",
+    },
+    {
+      name: "Guna",
+      address: "Thavalakuppam",
+      description: "Full Stack Developer",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "PHP", "SQL", "LARAVAL"],
+      online: true,
+      images: "images/4.jpg",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      {UserData.map((data, indes) => (
+        <UserCard
+          key={indes}
+          name={data.name}
+          address={data.address}
+          description={data.description}
+          skills={data.skills}
+          online={data.online}
+          images={data.images}
+        />
+      ))}
+    </Fragment>
   );
-}
+};
 
 export default App;

@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  background-color: #353b48;
+  box-shadow: 10px 10px 10px #353b48;
+  width: 300px;
+  max-width: 100%;
+  color: whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+.note {
+  background-color: gray;
+  padding: 7px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.online {
+  background-color: blue;
+}
+.offline {
+  background-color: green;
+}
+.img {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+h2 {
+  font-size: 25px;
+  font-family: Georgia, serif;
+}
+h3 {
+  font-size: 20px;
+  font-family: cursive;
+}
+p {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: system-ui;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.primary {
+  background-color: #0984e3;
+  border: 1px solid #0984e3;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.primary.outline {
+  background-color: transparent;
+}
+.skills {
+  background-color: #2f3648;
+  padding: 10px;
+  text-align: left;
+  margin-top: 5px;
+}
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.skills ul li {
+  display: inline-block;
+  border: 1px solid #595180;
+  padding: 7px;
+  margin: 0 7px 7px 0;
+  font-size: 12px;
+}
+.location {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: lawngreen;
+}
+
+@media screen and (max-width: 800px) {
+  .note {
+    top: 15px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .note {
+    top: 10px;
+    left: 7px;
+  }
+  .skills {
+    margin-top: -20px;
+  }
+  .skills ul {
+    text-align: right;
+  }
+  .skills ul li {
+    margin: 2px;
+    padding: 2px;
+  }
 }
