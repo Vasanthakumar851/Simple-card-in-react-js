@@ -5,7 +5,7 @@ const UserCard = (props) => {
       <span className={online ? "note online" : "note offline"}>
         {online ? "Online" : "Offline"}
       </span>
-      <img src={images} alt="" className="img" width="100px" />
+      <img src={images} alt="card-picture" className="img" width="100px" />
       <h2>{name}</h2>
       <h3>
         <span className="location">Location: </span>
