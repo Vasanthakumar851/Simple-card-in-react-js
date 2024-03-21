@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Simple-card-in-react-js/npm%20install%20--save%20gh-pages/static/css/main.71b31fad.css",
+    "main.js": "/Simple-card-in-react-js/npm%20install%20--save%20gh-pages/static/js/main.76e7d348.js",
+    "index.html": "/Simple-card-in-react-js/npm%20install%20--save%20gh-pages/index.html",
+    "main.71b31fad.css.map": "/Simple-card-in-react-js/npm%20install%20--save%20gh-pages/static/css/main.71b31fad.css.map",
+    "main.76e7d348.js.map": "/Simple-card-in-react-js/npm%20install%20--save%20gh-pages/static/js/main.76e7d348.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71b31fad.css",
+    "static/js/main.76e7d348.js"
+  ]
+}
