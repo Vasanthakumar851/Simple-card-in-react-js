@@ -8,8 +8,8 @@ const App = () => {
       address: "Pondy",
       description: "Front-End Developer",
       skills: ["HTML", "CSS", "JAVASCRIPT"],
-      online: true,
-      images: "images/1.png",
+      online: false,
+      images: "images/graduated.png",
     },
     {
       name: "Vijay",
